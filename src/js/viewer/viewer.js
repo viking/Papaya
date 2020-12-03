@@ -525,7 +525,7 @@ papaya.viewer.Viewer.prototype.initializeViewer = function () {
         this.canvas.addEventListener("touchstart", this.listenerTouchStart, false);
         this.canvas.addEventListener("touchend", this.listenerTouchEnd, false);
         this.canvas.addEventListener("dblclick", this.listenerMouseDoubleClick, false);
-        document.addEventListener("contextmenu", this.listenerContextMenu, false);
+        //document.addEventListener("contextmenu", this.listenerContextMenu, false);
 
         if (this.container.showControlBar) {
             // main slice
@@ -2567,7 +2567,7 @@ papaya.viewer.Viewer.prototype.resetViewer = function () {
     this.canvas.removeEventListener("mouseup", this.listenerMouseUp, false);
     document.removeEventListener("keydown", this.listenerKeyDown, true);
     document.removeEventListener("keyup", this.listenerKeyUp, true);
-    document.removeEventListener("contextmenu", this.listenerContextMenu, false);
+    //document.removeEventListener("contextmenu", this.listenerContextMenu, false);
     this.canvas.removeEventListener("touchmove", this.listenerTouchMove, false);
     this.canvas.removeEventListener("touchstart", this.listenerTouchStart, false);
     this.canvas.removeEventListener("touchend", this.listenerTouchEnd, false);

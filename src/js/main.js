@@ -248,6 +248,9 @@ papaya.Container.findParameters = function (containerHTML) {
 papaya.Container.fillContainerHTML = function (containerHTML, isDefault, params, replaceIndex) {
     var toolbarHTML, viewerHTML, displayHTML, index;
 
+    // always position sub-elements relative to container
+    containerHTML.css({ position: 'relative' });
+
     if (isDefault) {
         toolbarHTML = containerHTML.find("#" + PAPAYA_DEFAULT_TOOLBAR_ID);
         viewerHTML = containerHTML.find("#" + PAPAYA_DEFAULT_VIEWER_ID);

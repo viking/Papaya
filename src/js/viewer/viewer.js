@@ -2426,7 +2426,7 @@ papaya.viewer.Viewer.prototype.resizeViewer = function (dims) {
         this.drawViewer(true);
 
         if (this.container.showControls) {
-            offset = $(this.canvas).offset();
+            offset = $(this.canvas).position();
 
             incButton = $("#" + PAPAYA_CONTROL_MAIN_INCREMENT_BUTTON_CSS + this.container.containerIndex);
             incButton.css({
